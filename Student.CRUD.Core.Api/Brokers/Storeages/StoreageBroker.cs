@@ -1,16 +1,14 @@
 ﻿using Microsoft.AspNetCore.Mvc.Filters;
 using Microsoft.EntityFrameworkCore;
 using Student.CRUD.Brokers.Storeages;
-using StudentCRUD.Core.Api.Models.Students;
-using STX.EFxceptions.SqlServer;
 
 namespace StudentCRUD.Core.Api.Brokers.Storages
 {
-    public partial class StorageBroker : EFxceptionsContext, IStorageBroker
+    public partial class StorageBroker : ExceptionContext, IStorageBroker
     {
         private readonly IConfiguration configuration;
 
-        public StorageBroker(IConfiguration configuration)
+        public IStorageBroker(IConfiguration configuration)
         {
             this.configuration = configuration;
             this.Database.Migrate();
