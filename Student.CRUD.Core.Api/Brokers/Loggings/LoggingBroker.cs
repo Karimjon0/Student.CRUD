@@ -15,7 +15,7 @@ namespace StudentCRUD.Core.Api.Brokers.Loggings
         public void LogDebug(string message) =>
             this.logger.LogDebug(message);
 
-        public void LogError(Exception exception) =>
+        public void LogError(Exception exception) => 
             this.logger.LogError(exception, exception.Message);
 
         public void LogInformation(string message) =>
