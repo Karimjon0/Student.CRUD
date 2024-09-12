@@ -1,4 +1,5 @@
 ﻿
+
 namespace StudentCRUD.Core.Api.Brokers.Loggings
 {
     public interface ILoggingBroker
