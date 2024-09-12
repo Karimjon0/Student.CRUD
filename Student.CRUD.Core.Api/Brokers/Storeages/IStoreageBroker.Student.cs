@@ -11,4 +11,4 @@ namespace StudentCRUD.Core.Api.Brokers.Storages
         ValueTask<Student> DeleteStudentAsync(Student student);
     }
 }
-}
+
